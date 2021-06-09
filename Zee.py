@@ -109,24 +109,9 @@ while (loop == 'true'):
             os.system('xdg-open https://www.Facebook.com/Kudiyan.Da.Prince')
     else:
         print "Wrong Dear!"
-        os.system('xdg-open https://www.Facebook.com/Kudiyan.Da.Prince')
+        os.system('xdg-open https://www.Facebook.com/Kudiyan.Da.Prince')		os.system('clear')
         
         
-def super():
-	global toket
-	os.system('clear')
-	os.system('clear')
-	print logo
-	print 42*"\033[1;97m═"
-	print " 1  Crack With Lists Of IDz"
-	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Back"
-	pilih_super()
-
-def pilih_super():
-	peak = raw_input("\n\033[1;97m╰══•➢ \033[1;97m")
-        
-        elif peak =="1":
-		os.system('clear')
 		print logo
 		print 42*"\033[1;97m═"
 		try:
@@ -137,9 +122,6 @@ def pilih_super():
 			print '\x1b[1;96m[!] \x1b[1;91mFile ni milli'
 			raw_input('\n\x1b[1;96m[ \x1b[1;97mBack \x1b[1;96m]')
 			super()
-	elif peak =="0":
-		menu()
-	else:
 		print "\033[1;96m[!] \x1b[1;91mFill In Correctly"
 		pilih_super()
 	
@@ -153,7 +135,7 @@ def pilih_super():
 	print 42*"\033[1;97m═"
 	
 			
-def main(arg):
+	def main(arg):
 		global cekpoint,oks
 		user = arg
 		try:
