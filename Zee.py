@@ -125,8 +125,7 @@ def super():
 def pilih_super():
 	peak = raw_input("\n\033[1;97m╰══•➢ \033[1;97m")
         
-        
- elif peak =="1":
+        elif peak =="1":
 		os.system('clear')
 		print logo
 		print 42*"\033[1;97m═"
