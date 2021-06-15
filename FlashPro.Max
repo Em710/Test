@@ -694,5 +694,3 @@ def view_token():
     menu()
 			
 if __name__ == '__main__':
-	user_info()n__':
-	user_info()
