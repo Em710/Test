@@ -1,29 +1,6 @@
-Skip to content
-Sign up
-PATHAN SHERNI
-/
-REVERSE-ENGINEERING
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Add files via upload
- main
-@SHERNI
-SHERNI committed 9 days ago
-0 parents commit 6318e777ebe9730d3ce727010992118602135911
-Showing  with 692 additions and 0 deletions.
- 692  shernilan2.py 
-@@ -0,0 +1,692 @@
 #coding=utf-8
 #!/usr/bin/python2
-#source code by Tech Sherni
-#codded by Tech Sherni
-# do no try to decode it
+
 try:
     import os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
     from multiprocessing.pool import ThreadPool
@@ -710,18 +687,3 @@ def view_token():
 
 if __name__ == '__main__':
 	user_info()
-
-0 comments on commit 6318e77
-Please sign in to comment.
-� 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
