@@ -756,7 +756,7 @@ class crack:
 				else:continue
 					
 			self.ko+=1
-			print("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCP : %s\x1b[0;33m]\x1b[0;37m"%(self.ko"len(self.fl)"len(self.ada)"len(self.cp))"end=);sys.stdout.flush()
+			print("\r\x1b[0;33m[\x1b[0;37mCrack\x1b[0;33m]\x1b[0;37m %s/%s \x1b[0;32m[\x1b[0;37mOK : %s\x1b[0;32m] \x1b[0;33m[\x1b[0;37mCp: ")
 		except:
 			self.main(fl)
 
