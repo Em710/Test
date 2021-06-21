@@ -148,9 +148,7 @@ loop = 'true'
 while (loop == 'true'):
     passcode = raw_input("\033[1;92m[?] \x1b[1;97mPassCode \x1b[1;97m: ")
     if (passcode == CorrectPasscode):
-            print """
-            \033[1;92mCorrect 😎
-                  """
+            print """\033[1;92mCorrect """
             loop = 'false'
     else:
             print "\033[1;91mWRONG"
