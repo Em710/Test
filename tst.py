@@ -1,9 +1,7 @@
 #!/usr/bin/python2
 #coding=utf-8
-#Codded By Jam Shahrukh
+#Codded By SeeYouSoon
 #Editing My Script Will Not Make You A Coder
-#Facebook : JAM Shahrukh
-#Whatsapp : ++971528752764
 #Pakistan Cyber Expert
 #Alone Coder 
 try:
@@ -33,7 +31,7 @@ except ImportError:
 os.system('termux-setup-storage')
 
 try:
-    os.mkdir('/sdcard/ids')
+    os.mkdir('/sdcard/SeeYouSoon')
 except OSError:
     pass
 
@@ -81,7 +79,14 @@ def jalan(z):
 		time.sleep(0.1)
 ##### INTRO #####
 def logo():
-    os.system('echo -e "\n\n\033[1;92m    .S    .S_SSSs   SSS.        .SSS\n\033[1;92m   .SS  .SS~SSSSS   sSSS        SSSs\n\033[1;91m   S%S  S%S   SSSS  S%SSS      SSS%S\n\033[1;91m   S%S  S%S    S%S  S%S  SS  SS  S%S\n\033[1;97m   S&S  S%Sâ€¢SSSS%S  S%S   s..s   S%S\n\033[1;97m   S&S  S&S  SSS%S  S&S    ss    S&S\n\033[1;94m   S&S  S&S    S&S  S&S          S&S\n\033[1;94m   S&S  S&S    S&S  S&S          S&S\n\033[1;93m   d*S  S*S    S&S  S*S          S*S\n\033[1;93m  .S*S  S*S    S*S  S*S          S*S\n\033[1;96msdSSS   S*S    S*S  S*S          S*S\n\033[1;96mYSSY    SSS    S*S  SSS          S*S\n\033[1;91m-----------------------------------------------\n\033[1;97mâž£ Author : Jam Shahrukh x Xtylo Ali Raza\n\033[1;97mâž£ Github : https://github.com/Stylish-Queen\n\033[1;97mâž£ Fb Page: Jam Shahrukh Official\n\033[1;91m-----------------------------------------------" | lolcat')
+    print """
+\033[1;91m╔═══════════════════════\033[1;94m══════════════════════╗
+\033[1;93m║\033[1;93m* \033[1;97mAuthor  \033[1;91m: \033[1;33m[SeeYouSoon]                     \033[1;94m║
+\033[1;95m║\033[1;93m* \033[1;97mGitHub  \033[1;91m: \033[1;92m[https//:github.com/SeeYouSoon]  \033[1;95m║
+\033[1;94m║\033[1;93m* \033[1;97mSupport \033[1;91m: \033[1;98m[Rʌɱzʌŋ] \033[1;95m[Gɱ & Aɗŋʌŋ] \033[1;96m[Hʌsɘɘɓ]   \033[1;93m║
+\033[1;94m╚═══════════════════════\033[1;91m══════════════════════╝"""
+
+
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
@@ -97,7 +102,7 @@ def reg():
     time.sleep(1)
     
     try:
-        to = open('/sdcard/.hst.txt', 'r').read()
+        to = open('/sdcard/.Zee.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
@@ -113,11 +118,11 @@ def reg():
         os.system('clear')
         logo()
         print '\tApproved Failed'
-        print ' \033[1;92mYour Id Is Not Approved Already '
-        print ' \033[1;92mCopy token id and send to Jam Shahrukh'
-        print ' \033[1;92mYour id: ' + to
-        raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923053176060')
+        print ' \033[1;92mYour ID Is Not Approved Already '
+        print ' \033[1;92mCopy Token ID And Send To Me (SeeYouSoon)'
+        print ' \033[1;92mYour ID: ' + to
+        raw_input('\033[1;93m Press Enter To Send ID')
+        os.system('xdg-open https://wa.me/+923040754271')
         reg()
 
 
@@ -125,23 +130,23 @@ def reg2():
     os.system('clear')
     logo()
     print '\tApproval not detected'
-    print ' \033[1;92mCopy and press enter , And Send Me On +923053176060'
+    print ' \033[1;92mCopy And Press Enter , And Send Me On +923040754271'
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
-    raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923053176060')
+    raw_input(' Press Enter To Go To Whatsapp ')
+    os.system('xdg-open https://wa.me/+923040754271')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
-    raw_input('\033[1;92m Press enter to check Approval ')
+    raw_input('\033[1;92m Press Enter To Check Approval')
     reg()
 
 
 def ip():
     os.system('clear')
     logo()
-    print '\tCollecting device info'
+    print '\tCollecting Device Info'
     
     try:
         ipinfo = requests.get('http://ip-api.com/json/')
@@ -153,51 +158,60 @@ def ip():
     except:
         pass
 
-    print '\033[1;92m Your ip: ' + ips
+    print '\033[1;92m Your Ip: ' + ips
     time.sleep(1)
-    print '\033[1;92m Your country: ' + country
+    print '\033[1;92m Your Country: ' + country
     time.sleep(1)
-    print '\033[1;92m Your region: ' + regi
+    print '\033[1;92m Your Region: ' + regi
     time.sleep(1)
-    print ' \033[1;92mYour network: ' + network
+    print ' \033[1;92mYour Network: ' + network
     time.sleep(1)
     print ' Loading ...'
     time.sleep(1)
     methodlogin()
 
 def methodlogin():
-	try:
-                 t_check = open('access_token.txt', 'r')
-	except (KeyError, IOError):
-	         os.system('clear')
-	         logo()
-	         print "[1] Login With ID/Password."
-	         print "[2] Login Using Token."
-	         print "[3] Exit."
-	         print ('      ')
-	         hos = raw_input("\nChoose Option >>  ")
-	if hos =="":
-		print"[!]  Wrong Input"
-		exit()
-	elif hos =="1":
-		login()
-	elif hos =="2":
-		os.system('clear')
-		logo()
-		hosp = raw_input("[+] Give Token : ")
-		tik()
-		hopa = open('login.txt', 'w')
-		hopa.write(hosp)
-		hopa.close()
-		print "\n[âœ“] Logged In Successfully."
-		time.sleep(1)
-		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
-		menu()
-	elif hos =="0":
-		exit()
-	else:
-		print"[!] Wrong Input"
-		exit()        
+    os.system('clear')
+    print logo
+    print ("\x1b[1;97m[1] Login With Email/Number and Password")
+    print ("[2] Login With Access Token")
+    print ("[0] Back")
+    print
+    msuk = raw_input('⌯⌯⌯⌯⌯⋙ ')
+    if hop == '':
+        print ("[!] Fill in Correctly")
+        methodlogin()
+    elif hopz == '1':
+        login()
+    elif hopz == '2':
+        tokenz()
+    elif hopz == '0':
+        keluar()
+    else:
+        print ("[!] Fill in Correctly")
+        time.sleep(0.7)
+        methodlogin()
+ 
+ 
+def tokenz():
+    os.system('clear')
+    print logo
+    toket = raw_input(" Paste Access Token Here: ")
+    try:
+        otw = requests.get('https://graph.facebook.com/me?access_token=' + toket)
+        a = json.loads(otw.text)
+        nama = a['name']
+        zedd = open('login.txt', 'w')
+        zedd.write(toket)
+        zedd.close()
+        print '\x1b[1;92m[\xe2\x9c\x93] Login Success {^_^} '
+        os.system('xdg-open https://m.facebook.com/Kudiyan.Da.Prince')
+        time.sleep(1)
+        menu()
+    except KeyError:
+        print '\x1b[1;91m[!] Token Wrong !'
+        time.sleep(1.7)
+        methodlogin()        
 
 def login():
 	os.system('clear')
@@ -207,20 +221,16 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		logo()
-     	
-		
-		jalan(' \033[1;97m   âœ§ \033[1;97mWarning: \033[1;97mUse a New Account To Login' )
-		jalan(' \033[1;97m   âœ§ \033[1;97mðŸ‘‰ : \033[1;97mJam King Of Facebook' ) 
-		
+
 		print('	' )
-		print('      \033[1;97m      âœ§ \x1b[1;97mLogin With Facebook\x1b[1;97m âœ§')
+		print('      \033[1;97m      \x1b[1;97mLogin With Facebook\x1b[1;97m')
 		print('	' )
-		id = raw_input('\033[1;97mâœ§ \x1b[1;97mID/Email\x1b[1;97m: \x1b[1;97m')
-		pwd = raw_input('\033[1;97mâœ§ \x1b[1;97mPassword\x1b[1;97m: \x1b[1;97m')
+		id = raw_input('\033[1;97m\x1b[1;97mID/Email\x1b[1;97m: \x1b[1;97m')
+		pwd = raw_input('\033[1;97m\x1b[1;97mPassword\x1b[1;97m: \x1b[1;97m')
 		try:
 			br.open('https://m.facebook.com')
 		except mechanize.URLError:
-			print"\n\x1b[1;97mThere is no internet connection"
+			print"\n\x1b[1;97mThere Is No Internet Connection"
 			keluar()
 		br._factory.is_html = True
 		br.select_form(nr=0)
@@ -285,7 +295,7 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		print"\x1b[1;97mThere is no internet connection"
 		keluar()
-	os.system("clear") #Dev:jam
+	os.system("clear") #Dev:SeeYouSoon
 	logo()
 	print "  \033[1;97m        âš¡ \033[1;97mLogged in User Info\033[1;97m âš¡"
 	print "	   \033[1;97m Name\033[1;97m:\033[1;97m"+nama+"\033[1;97m               "
@@ -296,7 +306,7 @@ def menu():
 	print "\033[1;97mâœ§\033[1;97m.\033[1;97m1.\x1b[1;97m Start Cloning..."
       
         
-        print "\033[1;97mâœ§\033[1;97m.\033[1;97m2.\033[1;97m Follow Me On YouTube For Help"
+        print "\033[1;97mâœ§\033[1;97m.\033[1;97m2.\033[1;97m Follow Me On Facebook For Help"
         print "\033[1;97mâœ§\033[1;97m.\033[1;97m0.\033[1;97m Logout            "
         hop()
 
@@ -308,7 +318,7 @@ def hop():
 	elif hack =="1":
 		super()
 	elif hack =="2":
-	        os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
+	        os.system('xdg-open https://www.Facebook.com/Kudiyan.DA.Prince')
 	        menu()
         
 	elif hack =="0":
