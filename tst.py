@@ -102,7 +102,7 @@ def reg():
     time.sleep(1)
     
     try:
-        to = open('/sdcard/.Zee.txt', 'r').read()
+        to = open('/sdcard/.zee.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
@@ -136,7 +136,7 @@ def reg2():
     print ''
     raw_input(' Press Enter To Go To Whatsapp ')
     os.system('xdg-open https://wa.me/+923040754271')
-    sav = open('/sdcard/.hst.txt', 'w')
+    sav = open('/sdcard/.zee.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\033[1;92m Press Enter To Check Approval')
@@ -158,11 +158,11 @@ def ip():
     except:
         pass
 
-    print '\033[1;92m Your Ip: ' + ips
+    print '\033[1;92m Your Ip     : ' + ips
     time.sleep(1)
     print '\033[1;92m Your Country: ' + country
     time.sleep(1)
-    print '\033[1;92m Your Region: ' + regi
+    print '\033[1;92m Your Region : ' + regi
     time.sleep(1)
     print ' \033[1;92mYour Network: ' + network
     time.sleep(1)
