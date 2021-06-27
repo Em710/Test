@@ -26,8 +26,8 @@ except ImportError:
     os.system('pip2 install mechanize')
     os.system("pip2 install lolcat")
     os.system('python2 shahrukh.py')
-    __author__ = 'Mr.James'
-    __copyright = 'All rights reserved . Copyright  Mr.James'
+    #Author__ = 'SeeYouSoon'
+    #Copyright = 'All rights reserved . Copyright  SeeYouSoon'
 os.system('termux-setup-storage')
 
 try:
@@ -102,7 +102,7 @@ def reg():
     time.sleep(1)
     
     try:
-        to = open('/sdcard/.zee.txt', 'r').read()
+        to = open('/sdcard/.hst.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
@@ -136,7 +136,7 @@ def reg2():
     print ''
     raw_input(' Press Enter To Go To Whatsapp ')
     os.system('xdg-open https://wa.me/+923040754271')
-    sav = open('/sdcard/.zee.txt', 'w')
+    sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\033[1;92m Press Enter To Check Approval')
