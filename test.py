@@ -428,6 +428,3 @@ if len(sys.argv) == 2:
 		helpnote()
 	else:
 		timer()
-
-#try:timer()
-#except Exception as e:exit(str(e))
