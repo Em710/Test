@@ -426,6 +426,4 @@ class timer:
 if len(sys.argv) == 2:
 	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
 		helpnote()
-	else:
-
-timer()
+                timer()
