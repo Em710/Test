@@ -428,3 +428,4 @@ if len(sys.argv) == 2:
 		helpnote()
 	else:
 		timer()
+__init__(self)
