@@ -54,8 +54,8 @@ def notice():
 
 	runtxt("\n\033[0;91m YOU ARE NOT PREMIUM USER ")
 	runtxt("\033[0;93m SEND THIS KEY TO ADMIN >> %s%s"%(G,basesplit))
-	runtxt("\033[0;92m ADMIN WHATSAPP >> +8801730853768")
-	subprocess.check_output(["am", "start", "https://wa.me/+8801730853768"])
+	runtxt("\033[0;92m ADMIN WHATSAPP >> +923040754271")
+	subprocess.check_output(["am", "start", "https://wa.me/+923040754271"])
 
 
         
@@ -75,7 +75,7 @@ class Main:
 		self.cp = []
 		self.loop = 0
 		try:
-			plr = requests.get('https://github.com/Abir9930/dark10-aproval.txt.git').text
+			plr = requests.get('https://github.com/em710/Test/a.txt').text
 			if basesplit in plr:
 				key = basesplit
 				stat = ("\033[0;92mPREMIUM")
