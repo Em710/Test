@@ -75,7 +75,7 @@ class Main:
 		self.cp = []
 		self.loop = 0
 		try:
-			plr = requests.get('E7456J452Y1WZXJ2').text
+			plr = 'E7456J452Y1WZXJ2'
 			if basesplit in plr:
 				key = basesplit
 				stat = ("\033[0;92mPREMIUM")
